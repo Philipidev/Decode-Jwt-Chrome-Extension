@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Omnibox JWT Decoder",
+  "version": "1.0",
+  "description": "Decodes JWT from URLs entered in the Omnibox",
+  "icons": {
+    "128": "icon.png"
+  },
+  "background": {
+    "service_worker": "service_worker.js",
+    "type": "module"
+  },
+  "omnibox": {
+    "keyword" : "decode"
+  },
+  "permissions": ["scripting", "storage"]
+}
